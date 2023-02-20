@@ -5,8 +5,10 @@
     <title>Title</title>
 </head>
 <body>
-<form action="/login.html" method="post">
+<form action="/index.html" method="post">
     <p>Create Account</p>
+    <fieldset>
+        <legend>Form Create Account</legend>
         <b>First Name <spa>*:</spa></b>
         <input type="text" name="firstname">
         <b>Last Name <span>*:</span></b>
@@ -19,38 +21,45 @@
         <input type="password" name="password">
         <b>Confirm Password <span>*:</span></b>
         <input type="password" name="confirmpassword"> <br>
-        <b>Personal information</b>
-        <b>Gender <span>*:</span><b>
-            <label>Male</label>
-            <input type="radio" name="gender" value="male" checked>
-            <label>Female</label>
-            <input type="radio" name="gender" value="female">
-            <b>Hobbies <span>*:</span></b>
-            <input type="checkbox" name=" Music" value="male">
-            <label>Music</label>
-            <input type="checkbox" name="sports" value="female">
-            <label>Sports</label>
-            <input type="checkbox" name="travels" value="male" >
-            <label>Travels</label>
-            <input type="checkbox" name="movies" value="female">
-            <label>Movies</label> <br>
-            <b>Source of Income <span>*:</span><b>
-                <select name="" id="">
-                    <option value="employed">Employed</option>
-                    <option value="unemployed">Unemployed</option>
-                </select>
-                <b>Income <span>*:</span><b>
-                    <input type="range" name="income" min="1" max="10"> <br>
-                    <b>Age:<b>
-                        <input type="number" name="age">
-                        <label for="">Profile Picture:</label>
-                        <input type="file" name="profilepicture" id="picture"> <br>
-                        <b>Birthday <span>*:</span><b>
-                            <input type="date" name="bday">
-                            <b>Address <span>*:</span></b>
-                            <input type="text" name="address"> <br>
-                            <b>Bio <span>:</span></b>
-                            <textarea name="bio" id="bio" cols="50" rows="3"></textarea> <br>
+    </fieldset>
+    <form action="/index.html">
+        <fieldset>
+            <legend> Personal information</legend>
+            <b>Gender <span>*:</span><b>
+                <label>Male</label>
+                <input type="radio" name="gender" value="male" checked>
+                <label>Female</label>
+                <input type="radio" name="gender" value="female">
+                <b>Hobbies <span>*:</span></b>
+                <input type="checkbox" name=" Music" value="male">
+                <label>Music</label>
+                <input type="checkbox" name="sports" value="female">
+                <label>Sports</label>
+                <input type="checkbox" name="travels" value="male" >
+                <label>Travels</label>
+                <input type="checkbox" name="movies" value="female">
+                <label>Movies</label> <br>
+                <b>Source of Income <span>*:</span><b>
+                    <select name="" id="">
+                        <option value="employed">Employed</option>
+                        <option value="unemployed">Unemployed</option>
+                    </select>
+                    <b>Income <span>*:</span><b>
+                        <input type="range" name="income" min="1" max="10"> <br>
+                        <b>Age:<b>
+                            <input type="number" name="age">
+                            <label for="">Profile Picture:</label>
+                            <input type="file" name="profilepicture" id="picture"> <br>
+                            <b>Birthday <span>*:</span><b>
+                                <input type="date" name="bday">
+                                <b>Address <span>*:</span></b>
+                                <input type="text" name="address"> <br>
+                                <b>Bio <span>:</span></b>
+                                <textarea name="bio" id="bio" cols="50" rows="3"></textarea> <br>
+        </fieldset>
+    </form>
+
+
                             <input type="submit" value="Create">
                             <input type="reset" value="Reset">
 </form>
